@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于/about</title>
+    <style>
+        body {
+            transition: opacity ease-in 0.2s;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overscroll-behavior-y: contain;
+        }
+
+        body[unresolved] {
+            opacity: 0;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .content-container {
+            text-align: left;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            /* 为图片定位提供基准 */
+        }
+
+        .content-container img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto 10px; /* 调整图片底部的间距 */
+        }
+
+        h1 {
+            margin: 0; /* 移除标题的默认边距 */
+            display: inline; /* 让标题和版本号并排显示 */
+            margin-right: 5px; /* 调整标题和版本号之间的间距 */
+        }
+
+        .content-container.bottom-reached {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body inmaintabuse="1">
+    <div class="content-container">
+        <img src="./web/ic.png" alt="Description of the image">
+        <h1>关于</h1><span>1.02</span>
+
+        <p>！请不要传播我的个人信息！
+            <br><br>某国际学校在读 | 申研准备中 | 家乡成都
+            <br>社恐 谨慎 | 即使在网络上也绝不骂人，很温柔的喵~
+            <br>非专业 摄影 | 绘画 | 传统戏曲 | 飞友 （爱看ACI）X上偶尔发些杂七杂八的</p>
+            🏳️‍🌈友好 | 双？ | 喜欢二次元正太
+            <br>0的外貌身材性格,但是纯1 
+            <br>三次元男同内容基本不感兴趣
+            <br>不找对象，朋友越多越好
+            <br><br><br>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <a href="https://twitter.com/LaphiNeko">
+        <i class="fab fa-twitter"></i> @LaphiNeko
+        </a>
+        <p>其他平台账号暂时保密 | 不刷微博抖音小红书
+            <br>如果你是因为 迷路的牙刷 等主播内容看到的我：平时主要在黑听，所以你大概率不认识我
+            <br>虽然最喜欢的主播是西魔幽，但是关注迷路的牙刷谢谢喵</p>
+        <br>24.3.17<br>
+    </div>
+</body>
+</html>
